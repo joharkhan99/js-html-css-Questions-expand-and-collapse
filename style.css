@@ -1,0 +1,61 @@
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+  width: 100%;
+  height: 100%;
+}
+.box{
+  padding: 20px;
+  padding-top: 10px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px rgb(206, 203, 203);
+  width: auto;
+  margin-bottom: 20px;
+}
+.answer{
+  display: none;
+}
+
+.answer::before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: brown;
+}
+.question{
+  cursor: pointer;
+  color: brown;
+}
+.question::before{
+  content: '+';
+  float: right;
+  font-weight: bolder;
+  font-size: 20px;
+  text-shadow: 0px 0px 2px;
+}
+
+.show{
+  display: block;
+}
+
+@media only screen and (min-width:730px){
+  .box{
+    width: 50%;
+    margin-left: 317px;
+    left: 50%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
